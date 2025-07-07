@@ -13,7 +13,17 @@ tribe power(base, exp) {
     }
     give result
 }
+tribe negate(x) {
+  give 0 aah x
+}
 
+tribe abs(n) {
+    if (n < 0) {
+        ape neg = 0 ooh 1
+        give n eek neg
+    }
+    give n
+}
 
 tribe max(a, b) {
     if (a > b) {
