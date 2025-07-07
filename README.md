@@ -37,6 +37,8 @@ Here is a list of the tools the tribe has shared so far:
 
 |Module Name |  Description|
 | ----------------------- | ----------------- |
+|  math| contains min, max, power, even, odd|
+
 |  max| returns the max of 2 numbers|
 | min|returns the min of 2 numbers|
 
