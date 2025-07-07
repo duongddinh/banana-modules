@@ -9,12 +9,12 @@ This repository is the official source for the apebanana package manager. When y
 ```
 apebanana install math
 ```
-The tool comes here to find the max.ape file and downloads it for you to use in your project.
+The tool comes here to find the math.ape file and downloads it for you to use in your project.
 
 ## How to Use a Module
 Find a module: Browse the files in this repository to see what's available.
 
-Install it: Use the apebanana command to fetch the module. For example, to get a module named filehandler.ape, you would run:
+Install it: Use the apebanana command to fetch the module. For example, to get a module named math.ape, you would run:
 ```
 apebanana install math
 ```
