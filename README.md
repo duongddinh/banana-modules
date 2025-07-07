@@ -53,6 +53,24 @@ Here is a list of the tools the tribe has shared so far:
 | abs|returns absolute value|
 | negate|returns the negative value of a number|
 
+  ```
+  string_utils.ape
+```
+
+| Tribe Name             | Description                                                 | Example Usage                                               |
+| ---------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
+| `contains(h, n)`       | Gives `true` if string `h` (haystack) contains string `n` (needle). | `contains("banana", "ana")`                                 |
+| `sniff_trail(s, p)`    | Gives `true` if string `s` starts with prefix `p`.          | `sniff_trail("jungle", "jun")`                              |
+| `guard_trail(s, x)`    | Gives `true` if string `s` ends with suffix `x`.            | `guard_trail("canopy", "opy")`                              |
+| `replant(s, o, n)`     | Replaces all occurrences of `o` with `n` in string `s`.     | `replant("ooh-aah", "-", " ")`                              |
+| `echo(s, c)`           | Repeats string `s` for a total of `c` (count) times.        | `echo("aah ", 3)`                                           |
+| `reverse_chant(s)`     | Reverses the characters in string `s`.                      | `reverse_chant("danger")`                                   |
+| `to_uppercase_shout(s)`| Converts all letters in string `s` to uppercase.            | `to_uppercase_shout("whisper")`                             |
+| `to_lowercase_whisper(s)`| Converts all letters in string `s` to lowercase.            | `to_lowercase_whisper("SHOUT")`                             |
+| `capitalize_shout(s)`  | Capitalizes only the first letter of string `s`.            | `capitalize_shout("ape")`                                   |
+
+
+
 A general collection of useful helper functions.
 
 (This list will grow as more apes contribute!)
