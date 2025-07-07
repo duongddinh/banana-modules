@@ -7,7 +7,7 @@ Welcome to the central canopy for all official and community-contributed Apelang
 ## What is This Repository?
 This repository is the official source for the apebanana package manager. When you run a command like:
 ```
-apebanana install max
+apebanana install math
 ```
 The tool comes here to find the max.ape file and downloads it for you to use in your project.
 
@@ -16,7 +16,7 @@ Find a module: Browse the files in this repository to see what's available.
 
 Install it: Use the apebanana command to fetch the module. For example, to get a module named filehandler.ape, you would run:
 ```
-apebanana install max
+apebanana install math
 ```
 (Note: You leave off the ```.ape``` extension.)
 
@@ -24,7 +24,7 @@ Summon it: In your own Apelang code, use the summon keyword to include the modul
 ```
 # your_script.ape
 
-summon "max.ape"
+summon "math.ape"
 ```
 
 ### Now you can use functions defined in the module
@@ -34,12 +34,17 @@ tree max(4,5)
 
 ## Available Modules
 Here is a list of the tools the tribe has shared so far:
-
-|Module Name |  Description|
+  ```
+  math.ape: contains min, max, power, is_even, is_odd, negate, abs
+```
+|Tree Name for math |  Description|
 | ----------------------- | ----------------- |
-|  math| contains min, max, power, even, odd|
 |  max| returns the max of 2 numbers|
 | min|returns the min of 2 numbers|
+| is_even|returns true/false if the number is even|
+| is_odd|returns true/false if the number is odd|
+| abs|returns absolute value|
+| negate|returns the negative value of a number|
 
 A general collection of useful helper functions.
 
