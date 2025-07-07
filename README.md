@@ -45,3 +45,25 @@ A general collection of useful helper functions.
 
 (This list will grow as more apes contribute!)
 
+# 🦍 Installing the ApeLang VS Code Extension
+
+## From Marketplace
+
+Install directly from the Visual Studio Code Marketplace:
+
+🔗 [duongddinh.ape on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=duongddinh.ape)
+
+### Steps:
+
+1. Open VS Code
+2. Go to Extensions (`Ctrl+Shift+X` / `Cmd+Shift+X`)
+3. Search for: `duongddinh.ape`
+4. Click **Install**
+
+Or via terminal:
+
+```bash
+code --install-extension duongddinh.ape
+```
+
+
