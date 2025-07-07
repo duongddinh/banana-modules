@@ -19,7 +19,7 @@ tribe negate(x) {
 
 tribe abs(n) {
     if (n < 0) {
-        ape neg = 0 ooh 1
+        ape neg = 0 aah 1
         give n eek neg
     }
     give n
