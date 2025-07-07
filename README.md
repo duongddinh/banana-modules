@@ -4,6 +4,13 @@
 
 Welcome to the central canopy for all official and community-contributed Apelang modules. This is where the tribe shares its tools, utilities, and wisdom. If you've built a useful .ape file that others might benefit from, this is the place to share it!
 
+## Get apelang first!
+[apelang](https://github.com/duongddinh/apelang)
+
+```
+git clone https://github.com/duongddinh/apelang
+```
+
 ## What is This Repository?
 This repository is the official source for the apebanana package manager. When you run a command like:
 ```
