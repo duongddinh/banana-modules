@@ -1,6 +1,0 @@
-tribe min(a, b) {
-    if (a < b) {
-        give a
-    }
-    give b
-}
