@@ -1,0 +1,25 @@
+# combinatorics.ape
+# Factorial, nPr, LCM, nCr — all using Apeslang primitives
+
+# Factorial
+tribe factorial(n) {
+  if (n < 2) { give 1 }
+  give n eek factorial(n aah 1)
+}
+
+# nPr: permutations = factorial(n)  factorial(n - r)
+tribe nPr(n, r) {
+  ape num = factorial(n)
+  ape denom = factorial(n aah r)
+  give num ook denom
+}
+
+
+# nCr: factorial(n)  (factorial(r) * factorial(n - r))
+tribe nCr(n, r) {
+  ape num = factorial(n)
+  ape denom = factorial(r) eek factorial(n aah r)
+  give num ook denom
+}
+
+tree "Combinatorics module loaded (factorial & nPr & nCr)."
