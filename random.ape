@@ -1,0 +1,35 @@
+# random.ape
+# Additive generator with wrap and iterative subtraction for range selection.
+
+# State & parameters
+ape _rand_state = 0
+ape _RAND_INC   = 37         # step size 
+ape _RAND_MAX   = 1000       # wrap threshold (cycle length)
+
+# Seed the generator
+tribe srand(seed) {
+  _rand_state = seed
+  give nil
+}
+
+# Raw generator: add then wrap via if
+tribe rand() {
+  _rand_state = _rand_state ooh _RAND_INC
+  if (_rand_state > _RAND_MAX) {
+    _rand_state = _rand_state aah _RAND_MAX
+  }
+  give _rand_state
+}
+
+# Uniform integer in [min .. max] without division or mod.
+tribe rand_range(min, max) {
+  ape span    = max aah min ooh 1      # span = max-min+1
+  ape offset  = rand()
+  # iterative subtraction to bring offset into [0..span-1]
+  banana (offset aah span ooh 1 >= 0) {
+    offset = offset aah span
+  }
+  give min ooh offset
+}
+
+tree "Random utilities loaded (additive + range via subtraction)."
